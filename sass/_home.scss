@@ -1,0 +1,171 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+
+  .col {
+    width: 50%;
+    background: $custom-black;
+    color: $white;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__img-left,
+    &__img-right {
+      width: 50%;
+
+      background: {
+        size: cover;
+        position: left;
+      }
+    }
+
+    &__img-left {
+      background-image: url('../assets/img/portada-1.jpg');
+    }
+
+    &__img-right {
+      background: {
+        image: url('../assets/img/portada-4.jpg');
+        position: center;
+      }
+
+      opacity: 0.8;
+    }
+
+    &__text-left,
+    &__text-right {
+      width: 50%;
+      padding: 3rem;
+
+      h2 {
+        font: {
+          size: 1.8125rem;
+          weight: 400;
+        }
+
+        line-height: 2.6875rem;
+        margin-block-end: 1.125rem;
+      }
+
+      p {
+        font-size: 0.9375rem;
+        line-height: 1.75rem;
+      }
+    }
+
+    &__full-img-left,
+    &__full-img-right {
+      width: 100%;
+      min-height: 15.25rem;
+
+      background: {
+        size: cover;
+        position: center;
+      }
+    }
+
+    &__full-img-left {
+      background-image: url('../assets/img/portada-2.jpg');
+      opacity: 0.8;
+    }
+
+    &__full-img-right {
+      background-image: url('../assets/img/portada-3.jpg');
+    }
+
+  }
+
+  .overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    backdrop-filter: brightness(60%);
+    cursor: pointer;
+    transition: .3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.5rem;
+    }
+  }
+
+}
+
+
+// MEDIA QUERIES //
+
+
+@media screen and (max-width: 1500px) {
+  .main {
+    .home {
+      .col {
+
+        &__text-left,
+        &__text-right {
+          padding: 2.25rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .home {
+    .col {
+      width: 100%;
+
+      &__img-left,
+      &__img-right {
+        display: none;
+      }
+
+      &__text-left,
+      &__text-right {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .home {
+    .col {
+
+      &__full-img-right,
+      &__full-img-left {
+        height: 17rem;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .home {
+    flex-wrap: wrap;
+    .col {
+      &__full-img-left {
+        display: none;
+      }
+      &__text-left, &__text-right {
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

@@ -1,15 +1,20 @@
-// GOOGLE FONTS //
-
-@import url('tps://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
-
-
 // MODULES //
 
-// @import 'reset';
-// @import 'header';
+@import 'reset';
+@import 'variables';
+@import 'header';
+@import 'main';
+@import 'home';
+@import 'about';
+@import 'chef';
+@import 'menu-section';
+@import 'contact';
+@import 'footer';
 
 
 
 body {
-  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 1rem;
+  font-family: $primary-font;
+  color: $black-text;
 }

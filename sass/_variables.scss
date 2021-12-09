@@ -1,0 +1,73 @@
+/* ============== GOOGLE FONTS ================ */
+
+@import url('tps://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+
+/* ============== COLORS ================ */
+
+$custom-black: #141618;
+$white: #fff;
+$black-text: #303133;
+$gray-text: #777;
+$gold: #b4975a;
+$light-gray: #eaeaea;
+
+/* ============= FONTS ================ */
+
+$primary-font: 'Playfair Display',
+serif,
+system-ui;
+$secondary-font: 'Poppins',
+sans-serif,
+system-ui;
+
+
+/* ============= REUSABLES ================ */
+
+
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.container__title {
+  h2 {
+    font: {
+      size: 3.125rem;
+      weight: 400;
+      style: italic;
+    }
+    letter-spacing: -0.02em;
+    line-height: 3.6875rem;
+    margin-block-end: 1.125rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: #777;
+  }
+}
+
+a {
+  color: $black-text;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  text-decoration: none;
+
+  &:hover {
+    color: $gold;
+  }
+}
+
+
+// MEDIA QUERIES //
+
+// @media screen and (min-width: 280px) {
+//   .container {
+//     width: 100%;
+//     padding-inline-start: 1rem;
+//     padding-inline-end: 1rem;
+//   }
+// }

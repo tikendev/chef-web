@@ -1,13 +1,44 @@
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  block-size: 100%;
-  padding: 1rem 2rem;
-  background-color: red;
   align-items: center;
+  background: $white;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  padding: 0 2.25rem;
+  min-height: 5.875rem;
+  border-block-end: 1px solid $light-gray;
 
-  img {
-    width: 100%;
+  .logo {
+    max-width: 3.125rem;
   }
 
+  .nav {
+    &__list {
+      display: flex;
+      gap: 1rem;
+    }
+    &__item {
+      cursor: pointer;
+      transition: .3s ease;
+      font-size: 1.25rem;
+      padding-inline-end: 1rem;
+
+      &:not(:last-child) {
+        border-inline-end: 1px solid $light-gray;
+      }
+
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+  .social {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.25rem;
+  }
 }

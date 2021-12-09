@@ -1,0 +1,181 @@
+.contact {
+  &__datos {
+    padding: 5.625rem 0 11.875rem 0;
+    position: relative;
+
+    background: {
+      image: url('../assets/img/contacto-bg.jpg');
+      position: center;
+      size: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #14161831;
+      top: 0;
+      z-index: 1;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .blurb {
+      background: $white;
+      border: 6px double $light-gray;
+      padding: 2.25rem;
+      text-align: center;
+      width: 25%;
+
+      h3 {
+        font: {
+          size: 1.5rem;
+          weight: 400;
+        }
+
+        margin-block-end: 1.125rem;
+        border-block-end: 1px solid $light-gray;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #777;
+      }
+    }
+  }
+
+  &__form {
+    position: relative;
+    z-index: 3;
+    background: $white;
+    max-width: 40.625rem;
+    margin: 0 auto;
+    padding: 2.25rem;
+    margin-block-start: -6.25rem;
+    width: 90%;
+    text-align: center;
+
+    .form {
+      .input-group {
+        position: relative;
+        margin-block-end: 2rem;
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          font: {
+            size: 1rem;
+            family: $secondary-font;
+          }
+
+          color: $black-text;
+          width: 100%;
+          outline: none;
+          padding: 1rem 0;
+          background: none;
+          border: none;
+          border-block-end: 2px solid #b4985a50;
+          vertical-align: top;
+
+          &:focus {
+            border-block-end: 2px solid $gold;
+          }
+        }
+
+        textarea {
+          max-width: 100%;
+          max-height: 10.25rem;
+          min-height: 5.125rem;
+          min-width: 100%;
+        }
+
+        label {
+          color: $gray-text;
+          font-family: $secondary-font;
+
+          &.label {
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            font-size: 1rem;
+            line-height: 1rem;
+            margin-inline-start: 1rem;
+            transition: .3s ease;
+
+            &.active {
+              top: -.75rem;
+              margin-inline-start: 0;
+              font-size: .75rem;
+              color: $gray-text;
+            }
+          }
+        }
+
+        .error {
+          position: absolute;
+          color: rgb(255, 59, 59);
+
+          font: {
+            family: $secondary-font;
+            size: .875rem;
+          }
+        }
+      }
+
+      input[type="submit"] {
+        font-family: $secondary-font;
+        background: $gold;
+        color: $white;
+        border-radius: 1px;
+        border: 2px solid $white;
+        cursor: pointer;
+        margin-block-start: 2rem;
+        padding: 1rem;
+        width: 20%;
+        outline: none;
+        transition: .3s ease;
+
+        &:hover {
+          background: #6b521b;
+        }
+      }
+    }
+  }
+}
+
+
+// MEDIA QUERIES //
+
+@media screen and (max-width: 980px) {
+  .contact {
+    .container {
+      .blurb {
+        width: 100%;
+        max-width: 40.625rem;
+        margin: 0 auto;
+        &:not(:last-child){
+          margin-block-end: 2.25rem;
+        }
+      }
+    }
+
+    &__form {
+      width: 100%;
+      padding: 1rem;
+
+      .form{
+        input[type="submit"] {
+          width: 40%;
+          text-align: center;
+        }
+      }
+
+    }
+  }
+}

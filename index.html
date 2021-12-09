@@ -16,7 +16,7 @@
 
       <picture>
         <a href="">
-          <img src="./assets/img/logo.png" alt="Coffee and Cake">
+          <img class="logo" src="./assets/img/logo.png" alt="Coffee and Cake">
         </a>
       </picture>
 
@@ -30,7 +30,7 @@
         </ul>
       </nav>
 
-      <div class="social-container">
+      <div class="social">
         <a class="social__link" href="#">
           <i class="uil uil-facebook-f" aria-hidden="true"></i>
         </a>
@@ -105,17 +105,15 @@
       <section class="nosotros section" id="nosotros">
 
         <div class="container">
-          <div class="col col-left">
+          <div class="container__col-left">
             <div class="container__title">
-              <h2>Nosotros</h2>
-              <p>Conócenos</p>
+              <p>Nosotros</p>
+              <h2>Conócenos</h2>
             </div>
           </div>
 
-          <div class="col col-right">
-            <div class="container__text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur culpa voluptates beatae consequuntur facilis suscipit, praesentium ut quo fugit excepturi optio mollitia. Eveniet numquam necessitatibus nostrum sequi corporis qui facilis iure, ullam deserunt non veniam dolores provident beatae hic voluptatibus facere assumenda, aliquam quod labore molestias maxime quas accusantium. Cupiditate facilis, obcaecati sint placeat laborum consectetur nulla illum sit optio dolore dolorem minus similique nesciunt, cumque inventore a mollitia?</p>
-            </div>
+          <div class="container__col-right">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minus molestias nihil laborum unde eveniet animi corrupti exercitationem quaerat, a eos nam, mollitia itaque pariatur repudiandae, architecto dolores ipsam perferendis? Cupiditate excepturi saepe neque reprehenderit, perspiciatis suscipit officia ipsa molestias maxime repudiandae minima autem deserunt sit eius. Laborum sit repudiandae fuga qui debitis labore dicta cum fugit ipsum odit accusamus facere corrupti, similique nostrum, voluptates nam architecto sequi? Nulla sit ducimus doloremque, tenetur exercitationem temporibus, itaque ab unde omnis odit soluta delectus aut id harum est cumque eius voluptates expedita? Voluptatum voluptatem cupiditate quam. Placeat neque itaque accusamus dolores explicabo?</p>
           </div>
         </div>
 
@@ -127,7 +125,7 @@
 
         <div class="container">
 
-          <div class="col col-left">
+          <div class="container__col-left">
             <div class="slider" id="slider">
               <div class="slide img1"></div>
               <div class="slide img2"></div>
@@ -135,10 +133,10 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="container__col-right">
             <div class="container__title">
               <h2>Nuestro Chef</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, deleniti!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis reprehenderit deserunt dolor iure culpa ex? Error ab doloremque tempora eos sed molestias perspiciatis aut corporis aperiam. Sint eligendi exercitationem pariatur doloribus accusantium consequatur! Accusantium quibusdam eius similique impedit temporibus!</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi quasi assumenda facere nulla officia enim voluptatum totam exercitationem optio culpa, laboriosam ducimus cumque temporibus laborum accusamus, a veritatis dignissimos obcaecati maxime ipsum eaque adipisci eveniet distinctio. Ea, debitis distinctio.</p>
             </div>
           </div>
@@ -158,7 +156,7 @@
           <div class="container__menu">
 
             <ul class="menu__tabs" id="menuTabs">
-              <li><a href="#postres">Postres</a></li>
+              <li class="active"><a href="#postres">Postres</a></li>
               <li><a href="#cafes">Cafés</a></li>
             </ul>
 
@@ -166,12 +164,12 @@
 
               <!-- MENÚ POSTRES -->
 
-              <div id="postres">
+              <div class="active" id="postres">
 
                 <div class="content__item">
                   <div class="col col-left">
                     <h3>Lorem ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam numquam repellat reprehenderit? Ut, rerum inventore.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, est.</p>
                   </div>
                   <div class="col col-right">
                     <p class="price">15€</p>
@@ -181,7 +179,7 @@
                 <div class="content__item">
                   <div class="col col-left">
                     <h3>Lorem ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam numquam repellat reprehenderit? Ut, rerum inventore.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, est.</p>
                   </div>
                   <div class="col col-right">
                     <p class="price">15€</p>
@@ -190,7 +188,7 @@
                 <div class="content__item">
                   <div class="col col-left">
                     <h3>Lorem ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam numquam repellat reprehenderit? Ut, rerum inventore.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, est.</p>
                   </div>
                   <div class="col col-right">
                     <p class="price">15€</p>
@@ -199,7 +197,7 @@
                 <div class="content__item">
                   <div class="col col-left">
                     <h3>Lorem ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam numquam repellat reprehenderit? Ut, rerum inventore.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, est.</p>
                   </div>
                   <div class="col col-right">
                     <p class="price">15€</p>
@@ -215,8 +213,7 @@
                 <div class="content__item">
                   <div class="col col-left">
                     <h3>Lorem ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam numquam repellat reprehenderit? Ut, rerum
-                      inventore.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem?</p>
                   </div>
                   <div class="col col-right">
                     <p class="price">15€</p>
@@ -226,8 +223,7 @@
                 <div class="content__item">
                   <div class="col col-left">
                     <h3>Lorem ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam numquam repellat reprehenderit? Ut, rerum
-                      inventore.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem?</p>
                   </div>
                   <div class="col col-right">
                     <p class="price">15€</p>
@@ -236,8 +232,7 @@
                 <div class="content__item">
                   <div class="col col-left">
                     <h3>Lorem ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam numquam repellat reprehenderit? Ut, rerum
-                      inventore.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem?</p>
                   </div>
                   <div class="col col-right">
                     <p class="price">15€</p>
@@ -246,8 +241,7 @@
                 <div class="content__item">
                   <div class="col col-left">
                     <h3>Lorem ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam numquam repellat reprehenderit? Ut, rerum
-                      inventore.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem?</p>
                   </div>
                   <div class="col col-right">
                     <p class="price">15€</p>
@@ -293,23 +287,22 @@
         </div>
 
         <div class="contact__form">
-          <form action="" class="contact-form" name="contact">
+          <form action="" class="form" name="contact">
 
+            <div class="input-group">
+              <input type="text" id="name" name="name" autocomplete="name" aria-placeholder="Nombre" required>
+              <label class="label" for="name">Nombre</label>
+            </div>
 
-            <label class="label" for="name">
-              <input type="text" id="name" name="name" placeholder="Nombre" autocomplete="name" aria-placeholder="Nombre" required>
-              <span>Nombre</span>
-            </label>
+            <div class="input-group">
+              <input type="email" id="email" name="email" autocomplete="email" aria-placeholder="Correo electrónico" required>
+              <label class="label" for="email">Correo electrónico</label>
+            </div>
 
-            <label class="label" for="email">
-              <input type="email" id="email" name="email" autocomplete="email" placeholder="Correo electrónico" aria-placeholder="Correo electrónico" required>
-              <span>Correo electrónico</span>
-            </label>
-
-            <label class="label" for="message">
-              <textarea placeholder="mensaje" name="message" id="message" aria-placeholder="Mensaje"></textarea>
-              <span>Mensaje</span>
-            </label>
+            <div class="input-group">
+              <textarea name="message" id="message" aria-placeholder="Mensaje"></textarea>
+              <label class="label" for="message">Mensaje</label>
+            </div>
 
             <input type="submit" value="Enviar">
 
@@ -324,7 +317,7 @@
     <!-- FOOTER -->
 
     <footer class="footer">
-      <p class="copyright">Todos los derechos reservados &copy;</p>
+      <p>Todos los derechos reservados &copy;</p>
       <div class="social-container">
         <a class="social__link" href="#">
           <i class="uil uil-facebook-f" aria-hidden="true"></i>
@@ -337,6 +330,10 @@
         <a class="social__link" href="#">
           <i class="uil uil-instagram" aria-hidden="true"></i>
         </a>
+      </div>
+
+      <div class="copyright">
+        <span>Made with &hearts; by <a href="https://github.com/Tiken-Dev" target="_blank">Tiken.codes</a></span>
       </div>
     </footer>
 

@@ -1,0 +1,39 @@
+.footer {
+  margin-block-start: 2.25rem;
+  background: $custom-black;
+  padding: 5.625rem 0;
+  text-align: center;
+  color: $white;
+
+  .social-container {
+    margin-block-start: 2.25rem;
+
+    .social__link {
+      color: $white;
+      font-size: 2rem;
+
+      &:not(:last-child) {
+        padding: 0 1rem 0 0;
+      }
+
+      &:hover {
+        color: $gold;
+      }
+    }
+
+  }
+
+  .copyright {
+    margin-block-start: 2.25rem;
+
+    a {
+      color: $gold;
+      font-size: 1.25rem;
+      vertical-align: middle;
+
+      &:hover {
+        color: #eeab1b
+      }
+    }
+  }
+}
