@@ -26,14 +26,30 @@
 
       li {
         padding: 1rem;
+        border-block-end: 2px solid transparent;
 
         a {
-          border-block-end: 2px solid transparet;
+          color: $black-text;
+          transition: .3s ease;
+          -webkit-transition: .3s ease;
+          -o-transition: .3s ease;
+          text-decoration: none;
+          padding: 1rem;
+
+
+          &:hover {
+            color: $gold;
+          }
+
         }
 
-        &.active {
+        &.active a {
           border-block-end: 2px solid $gold;
+          color: $gold;
+          padding: 1rem;
+          transition: .1s ease;
         }
+
       }
     }
 
@@ -44,9 +60,9 @@
       border: 6px double $light-gray;
       padding: 0 2rem;
 
-      >div {
+      > div {
         display: none;
-        transition: .3s ease;
+        transition: all .3s ease;
       }
 
       .active {
@@ -87,6 +103,30 @@
 
       .content__item:not(:last-child) {
         border-block-end: 1px solid $light-gray;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 787px) {
+  .nuestro-menu {
+    .container {
+      &__menu {
+        .menu__content {
+          padding: 0 .5rem;
+
+          .content__item {
+            flex-wrap: wrap;
+            padding: 1rem;
+            gap: 1rem;
+
+            .col-left,
+            .col-right {
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }

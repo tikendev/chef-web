@@ -30,9 +30,12 @@
       color: $gold;
       font-size: 1.25rem;
       vertical-align: middle;
+      position: relative;
+      bottom: 2px;
+      left: 1px;
 
       &:hover {
-        color: #eeab1b
+        color: #f1e536
       }
     }
   }

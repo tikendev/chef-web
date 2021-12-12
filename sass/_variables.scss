@@ -1,6 +1,6 @@
 /* ============== GOOGLE FONTS ================ */
 
-@import url('tps://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
 
 
 /* ============== COLORS ================ */
@@ -38,6 +38,7 @@ system-ui;
       weight: 400;
       style: italic;
     }
+
     letter-spacing: -0.02em;
     line-height: 3.6875rem;
     margin-block-end: 1.125rem;
@@ -49,25 +50,29 @@ system-ui;
   }
 }
 
-a {
-  color: $black-text;
-  transition: .3s ease;
-  -webkit-transition: .3s ease;
-  -o-transition: .3s ease;
-  text-decoration: none;
 
-  &:hover {
-    color: $gold;
-  }
-}
 
 
 // MEDIA QUERIES //
 
-// @media screen and (min-width: 280px) {
-//   .container {
-//     width: 100%;
-//     padding-inline-start: 1rem;
-//     padding-inline-end: 1rem;
-//   }
-// }
+@media screen and (max-width: 580px) {
+  .container__title {
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .nosotros {
+    .container {
+      .container__col-right {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+}

@@ -8,7 +8,7 @@
   position: fixed;
   z-index: 99;
   top: 0;
-  padding: 0 2.25rem;
+  padding: 0 2rem;
   min-height: 5.875rem;
   border-block-end: 1px solid $light-gray;
 
@@ -16,16 +16,23 @@
     max-width: 3.125rem;
   }
 
+  // MENU DESKTOP //
+
+
   .nav {
+    display: none;
+
     &__list {
       display: flex;
       gap: 1rem;
     }
+
     &__item {
       cursor: pointer;
       transition: .3s ease;
       font-size: 1.25rem;
       padding-inline-end: 1rem;
+      color: $black-text;
 
       &:not(:last-child) {
         border-inline-end: 1px solid $light-gray;
@@ -36,9 +43,107 @@
       }
     }
   }
+
   .social {
-    display: flex;
+    display: none;
     gap: 1rem;
     font-size: 1.25rem;
+
+    a {
+      color: $black-text;
+      transition: .3s ease;
+      -webkit-transition: .3s ease;
+      -o-transition: .3s ease;
+      text-decoration: none;
+
+
+      &:hover {
+        color: $gold;
+      }
+    }
+
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 2.25rem;
+  }
+
+}
+
+
+
+// MENU MOBILE //
+
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: fixed;
+  top: 5.875rem;
+  left: -100%;
+  background: $white;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  height: 100vh;
+  font-size: 2rem;
+  transition: .3s all ease;
+  z-index: 50;
+
+
+  .social {
+    a {
+      color: $black-text;
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+
+    .nav__item {
+      transition: .3s ease;
+      cursor: pointer;
+      padding: .5rem;
+      color: $black-text;
+
+
+      &:not(:last-child) {
+        border-block-end: 1px solid $light-gray;
+      }
+
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+
+  &.active {
+    left: 0;
+  }
+}
+
+
+// MEDIA QUERIES //
+
+@media screen and (min-width: 1024px) {
+  .header {
+
+    .nav {
+      display: flex;
+    }
+
+    .social {
+      display: flex;
+    }
+
+    .hamburger {
+      display: none;
+    }
   }
 }
